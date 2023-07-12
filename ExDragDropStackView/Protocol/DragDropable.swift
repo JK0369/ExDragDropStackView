@@ -85,7 +85,7 @@ extension DragDropable where Self: UIStackView {
         pointForDragDrop = originalPosition
         animateBeganDrag()
     }
-    
+
     func animateBeganDrag() {
         clipsToBounds = config.clipsToBoundsWhileDragDrop
         guard let actualView else { return }
@@ -109,7 +109,7 @@ extension DragDropable where Self: UIStackView {
             completion: nil
         )
     }
-    
+
     func animateBeganDragEffect() {
         let scale = CGAffineTransform(scaleX: config.dargViewScale, y: config.dargViewScale)
         let translation = CGAffineTransform(translationX: 0, y: config.dragBeganEffectOffsetY)
@@ -145,7 +145,7 @@ extension DragDropable where Self: UIStackView {
             handleChangedWhenDraggingUp(index: index, maxY: maxY, midY: midY, minY: minY)
         }
     }
-    
+
     func handleChangedWhenDraggingDown(index: Int, maxY: Double, midY: Double, minY: Double) {
         dargDropDelegate?.dargging(inUpDirection: false, maxY: maxY, minY: minY)
         guard
@@ -164,7 +164,7 @@ extension DragDropable where Self: UIStackView {
         finalDragDropFrame = actualView.frame
         pointForDragDrop.y = actualView.frame.midY
     }
-    
+
     func handleChangedWhenDraggingUp(index: Int, maxY: Double, midY: Double, minY: Double) {
         dargDropDelegate?.dargging(inUpDirection: true, maxY: maxY, minY: minY)
         guard
@@ -189,7 +189,7 @@ extension DragDropable where Self: UIStackView {
         isStatusDragging = false
         dargDropDelegate?.didEndDrop()
     }
-    
+
     func animateDrop() {
         UIView.animate(
             withDuration: 0.4,
@@ -205,7 +205,7 @@ extension DragDropable where Self: UIStackView {
             }
         )
     }
-    
+
     func animateDropEffect() {
         snapshotView?.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         snapshotView?.frame = finalDragDropFrame
@@ -219,7 +219,6 @@ extension DragDropable where Self: UIStackView {
                     } completion: { _ in
                         subview.layer.removeAllAnimations()
                     }
-
             }
     }
 }
