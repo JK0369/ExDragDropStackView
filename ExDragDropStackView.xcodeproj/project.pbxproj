@@ -19,6 +19,9 @@
 		4A0E46332A5EE6F4006CC730 /* ExDragDropStackViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E46322A5EE6F4006CC730 /* ExDragDropStackViewTests.swift */; };
 		4A0E463D2A5EE6F4006CC730 /* ExDragDropStackViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E463C2A5EE6F4006CC730 /* ExDragDropStackViewUITests.swift */; };
 		4A0E463F2A5EE6F4006CC730 /* ExDragDropStackViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E463E2A5EE6F4006CC730 /* ExDragDropStackViewUITestsLaunchTests.swift */; };
+		4A0E46502A5EEE9C006CC730 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E464F2A5EEE9C006CC730 /* Array+Extension.swift */; };
+		4A0E46522A5EEEB8006CC730 /* DragDropable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E46512A5EEEB8006CC730 /* DragDropable.swift */; };
+		4A0E46542A5EEF25006CC730 /* DragDropStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E46532A5EEF25006CC730 /* DragDropStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		4A0E46382A5EE6F4006CC730 /* ExDragDropStackViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExDragDropStackViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0E463C2A5EE6F4006CC730 /* ExDragDropStackViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDragDropStackViewUITests.swift; sourceTree = "<group>"; };
 		4A0E463E2A5EE6F4006CC730 /* ExDragDropStackViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDragDropStackViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4A0E464F2A5EEE9C006CC730 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		4A0E46512A5EEEB8006CC730 /* DragDropable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropable.swift; sourceTree = "<group>"; };
+		4A0E46532A5EEF25006CC730 /* DragDropStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropStackView.swift; sourceTree = "<group>"; };
 		5D62942195FC0E84F5BADFFF /* Pods-ExDragDropStackView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDragDropStackView.release.xcconfig"; path = "Target Support Files/Pods-ExDragDropStackView/Pods-ExDragDropStackView.release.xcconfig"; sourceTree = "<group>"; };
 		8DB7E2713C1681B6830EDFD6 /* Pods-ExDragDropStackView-ExDragDropStackViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDragDropStackView-ExDragDropStackViewUITests.release.xcconfig"; path = "Target Support Files/Pods-ExDragDropStackView-ExDragDropStackViewUITests/Pods-ExDragDropStackView-ExDragDropStackViewUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B209AA842635E025DEB81BD5 /* Pods_ExDragDropStackView_ExDragDropStackViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExDragDropStackView_ExDragDropStackViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +122,9 @@
 		4A0E461A2A5EE6F3006CC730 /* ExDragDropStackView */ = {
 			isa = PBXGroup;
 			children = (
+				4A0E464E2A5EEE96006CC730 /* Extension */,
+				4A0E464C2A5EEE80006CC730 /* View */,
+				4A0E464B2A5EEE7E006CC730 /* Protocol */,
 				4A0E461B2A5EE6F3006CC730 /* AppDelegate.swift */,
 				4A0E461D2A5EE6F3006CC730 /* SceneDelegate.swift */,
 				4A0E461F2A5EE6F3006CC730 /* ViewController.swift */,
@@ -144,6 +153,30 @@
 			path = ExDragDropStackViewUITests;
 			sourceTree = "<group>";
 		};
+		4A0E464B2A5EEE7E006CC730 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				4A0E46512A5EEEB8006CC730 /* DragDropable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		4A0E464C2A5EEE80006CC730 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A0E46532A5EEF25006CC730 /* DragDropStackView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4A0E464E2A5EEE96006CC730 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4A0E464F2A5EEE9C006CC730 /* Array+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		56B9AB571FDDED4298AF0F7D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +197,6 @@
 				41702FC645E7EE5D8AADC55F /* Pods-ExDragDropStackViewTests.debug.xcconfig */,
 				F86579FCBF2DC66AD05100F7 /* Pods-ExDragDropStackViewTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -407,9 +439,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0E46542A5EEF25006CC730 /* DragDropStackView.swift in Sources */,
 				4A0E46202A5EE6F3006CC730 /* ViewController.swift in Sources */,
 				4A0E461C2A5EE6F3006CC730 /* AppDelegate.swift in Sources */,
 				4A0E461E2A5EE6F3006CC730 /* SceneDelegate.swift in Sources */,
+				4A0E46502A5EEE9C006CC730 /* Array+Extension.swift in Sources */,
+				4A0E46522A5EEEB8006CC730 /* DragDropable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
