@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_ExDragDropStackView_ExDragDropStackViewUITests : NSObject
+@end
+@implementation PodsDummy_Pods_ExDragDropStackView_ExDragDropStackViewUITests
+@end

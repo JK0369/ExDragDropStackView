@@ -1,0 +1,6 @@
+framework module Pods_ExDragDropStackView {
+  umbrella header "Pods-ExDragDropStackView-umbrella.h"
+
+  export *
+  module * { export * }
+}
