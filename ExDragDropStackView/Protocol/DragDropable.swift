@@ -75,6 +75,7 @@ extension DragDropable where Self: UIStackView {
     }
     
     func handleBegan(gesture: UILongPressGestureRecognizer) {
+        guard !isStatusDragging else { return }
         isStatusDragging = true
         dargDropDelegate?.didBeginDrag()
         if let gestureView = gesture.view {
